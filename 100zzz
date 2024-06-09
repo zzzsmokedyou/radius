@@ -51,7 +51,7 @@ L_6_:NewButton(
 	getgenv().AimRadius = 100
 	getgenv().ThirdPerson = true
 	getgenv().FirstPerson = true
-	getgenv().TeamCheck = false
+	getgenv().TeamCheck = true
 	getgenv().PredictMovement = true
 	getgenv().PredictionVelocity = 9
 	local L_27_, L_28_, L_29_, L_30_ =
@@ -111,7 +111,7 @@ L_6_:NewButton(
 					L_47_[L_53_forvar1.Name .. L_52_forvar0].plr = L_53_forvar1
 					L_47_[L_53_forvar1.Name .. L_52_forvar0].diff = L_59_
 					table.insert(L_48_, L_59_)
-				elseif getgenv().TeamCheck == false and L_53_forvar1.Team == L_31_.Team then
+				elseif getgenv().TeamCheck == true and L_53_forvar1.Team == L_31_.Team then
 					local L_60_ =
                             (L_53_forvar1.Character:FindFirstChild("Head").Position - game.Workspace.CurrentCamera.CFrame.p).magnitude
 					local L_61_ =

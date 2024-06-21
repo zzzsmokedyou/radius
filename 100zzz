@@ -997,3 +997,12 @@ L_21_:NewButton(
 	L_206_.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=5319839762"
 end
 )
+local L_7_ = L_4_:NewTab("Inf Yield")
+local L_8_ = L_7_:NewSection("Zzz's Hub")
+L_8_:NewButton(
+    "Inf Yield",
+    "Inf Yield.",
+    function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end
+)
